@@ -24,7 +24,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="bodycontent">
 
   <section id="hero"
     class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
@@ -477,6 +477,7 @@
       window.onscroll = function () { }
       rootElement.style.scrollBehavior = 'smooth';
       // localStorage.setItem('opened', 'true');
+      document.getElementById('bodycontent').style.overflow = "auto";
       playAudio();
     }
 
